@@ -3,6 +3,7 @@ package com.denghb.controller;
 import com.denghb.exception.JsonException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,10 +25,10 @@ public class HelloController {
         return "Hello World<br/>" + title + "<br/>" + rNumber + "<br/>" + rValue;
     }
 
-    @RequestMapping("/hello")
-    @ResponseBody
-    public String hello() {
-        return "Hello World";
+    @RequestMapping("/hello")// "/error"内部保留
+    public String hello(Model model) {
+        model.addAttribute("message","你好denghb");
+        return "hello";
     }
 
     @RequestMapping("/error1")// "/error"内部保留
