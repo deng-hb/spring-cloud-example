@@ -1,4 +1,4 @@
-package com.denghb.model;
+package com.denghb.spring.cloud.model;
 
 /**
  * Created by denghb on 2017/2/6.

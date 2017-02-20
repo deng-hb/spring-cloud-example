@@ -1,8 +1,7 @@
-package com.denghb.handler;
+package com.denghb.spring.cloud.handler;
 
-import com.denghb.exception.JsonException;
-import com.denghb.model.JsonModel;
-import org.springframework.http.HttpStatus;
+import com.denghb.spring.cloud.exception.JsonException;
+import com.denghb.spring.cloud.model.JsonModel;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;

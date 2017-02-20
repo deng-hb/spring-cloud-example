@@ -1,4 +1,4 @@
-package com.denghb.exception;
+package com.denghb.spring.cloud.exception;
 
 /**
  * Created by denghb on 2017/2/6.
