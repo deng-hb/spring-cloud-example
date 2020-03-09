@@ -9,8 +9,6 @@
     <modules>
         <module>spring-cloud-eureka-server</module>
         <module>spring-cloud-eureka-client</module>
-        <module>spring-cloud-consul</module>
-        <module>spring-cloud-gateway</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -25,6 +23,16 @@
         <spring-cloud.version>Hoxton.SR3</spring-cloud.version>
         <springboot.version>2.2.5.RELEASE</springboot.version>
     </properties>
+
+    <dependencies>
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -44,4 +52,13 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>
