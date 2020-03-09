@@ -3,19 +3,30 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
-        <artifactId>spring-cloud</artifactId>
         <groupId>com.denghb</groupId>
+        <artifactId>spring-cloud</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>spring-cloud-eureka-client</artifactId>
+    <artifactId>spring-cloud-openfeign</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>spring-cloud-eureka-client</name>
+    <name>spring-cloud-openfeign</name>
     <url>http://www.example.com</url>
 
+
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+
+        <!--<dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+        </dependency>-->
 
         <dependency>
             <groupId>org.springframework.cloud</groupId>
