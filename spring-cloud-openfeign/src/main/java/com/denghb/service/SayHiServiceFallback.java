@@ -6,6 +6,6 @@ import org.springframework.stereotype.Component;
 public class SayHiServiceFallback implements SayHiService {
     @Override
     public String sayHi(String name) {
-        return null;
+        return "error";
     }
 }
