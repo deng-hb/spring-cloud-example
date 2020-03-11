@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class EnvController {
 
-    @Value("${env:fail}")
+    @Value("${env}")
     private String env;
 
     @GetMapping("/env")

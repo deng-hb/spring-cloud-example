@@ -27,6 +27,10 @@ spring:
     admin:
       client:
         url: http://admin:123@localhost:9999
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:123@localhost:11000/eureka/
 
 management:
   endpoints:
