@@ -11,6 +11,9 @@
         <module>spring-cloud-eureka-client</module>
         <module>spring-cloud-openfeign</module>
         <module>spring-cloud-admin</module>
+        <module>spring-cloud-config-client</module>
+        <module>spring-cloud-config-server</module>
+        <module>spring-cloud-gateway</module>
     </modules>
     <packaging>pom</packaging>
 
