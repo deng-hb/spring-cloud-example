@@ -3,12 +3,17 @@ server:
 spring:
   application:
     name: config-server
+  security:
+    basic:
+      enabled: true
+    user.name: config
+    user.password: 123
   cloud:
     config:
       server:
         git:
           uri: https://github.com/deng-hb/spring-cloud-example.git
-          # 配置文件目录
+          # 配置文件在git仓库的目录
           searchPaths: /config/
           force-pull: true
   # mq 刷新
@@ -17,17 +22,11 @@ spring:
     port: 5672
     username: guest
     password: guest
-
-eureka:
-  instance:
-    leaseRenewalIntervalInSeconds: 10
-    health-check-url-path: /actuator/health
-    metadata-map:
-      startup: ${random.int}    #needed to trigger info and endpoint update after restart
-  client:
-    registryFetchIntervalSeconds: 5
-    serviceUrl:
-      defaultZone: ${eureka.url}
+  # spring boot admin
+  boot:
+    admin:
+      client:
+        url: http://admin:123@localhost:9999
 
 management:
   endpoints:

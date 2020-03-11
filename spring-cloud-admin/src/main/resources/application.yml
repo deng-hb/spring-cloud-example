@@ -19,7 +19,7 @@ eureka:
   client:
     registryFetchIntervalSeconds: 5
     serviceUrl:
-      defaultZone: ${eureka}
+      defaultZone: ${eureka.url}
 
 management:
   endpoints:

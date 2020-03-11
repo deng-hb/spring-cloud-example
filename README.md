@@ -1,7 +1,9 @@
 ## Spring Cloud Example
 
-### Note
+这个是学习Spring Cloud的项目
 
-+ port=`11xxx`注册中心
-+ port=`12xxx`提供者
-+ port=`15xxx`消费者
+### 启动顺序
+
+1.[spring-cloud-config-server](./spring-cloud-config-server)
+2.[spring-cloud-eureka-server](./spring-cloud-eureka-server)
+...
